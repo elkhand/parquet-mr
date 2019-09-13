@@ -7,7 +7,7 @@
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
  *
- *   https://urldefense.proofpoint.com/v2/url?u=http-3A__www.apache.org_licenses_LICENSE-2D2.0&d=DwIGAg&c=r2dcLCtU9q6n0vrtnDw9vg&r=_H-J2BweVLYheoODWY_Tyw&m=j0SlfL2WyG-iHbdjZQvPS6wUD6PPXwHG4PbgvlFiaXY&s=vxgi_W52ITIsXcqjgfMPy8xLx8jOQFKVe_W2cbOdUaU&e= 
+ *   http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
@@ -135,7 +135,7 @@ class AvroIndexedRecordConverter<T extends IndexedRecord> extends GroupConverter
                                         GenericData model, ParentValueContainer parent) {
     if (schema.getType().equals(Schema.Type.BOOLEAN)) {
       return new AvroConverters.FieldBooleanConverter(parent);
-    } else if (schema.getType().equals(https://urldefense.proofpoint.com/v2/url?u=http-3A__Schema.Type.INT&d=DwIGAg&c=r2dcLCtU9q6n0vrtnDw9vg&r=_H-J2BweVLYheoODWY_Tyw&m=j0SlfL2WyG-iHbdjZQvPS6wUD6PPXwHG4PbgvlFiaXY&s=ER4hbbmH3L91LvKETgKMb-A5Rj9WHwNVmOn5SzobvlI&e= )) {
+    } else if (schema.getType().equals(Schema.Type.INT)) {
       return new AvroConverters.FieldIntegerConverter(parent);
     } else if (schema.getType().equals(Schema.Type.LONG)) {
       return new AvroConverters.FieldLongConverter(parent);
